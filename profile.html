@@ -1,0 +1,139 @@
+<!-- Gagandeep, Sapna -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Foodine - Profile </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="foodine logo" width="125px" /></a>
+            </div>       
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="index.html" id="homelogin">Home</a></li>
+                <li><a href="profile.html" id="user"></a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="favourites.html">Favourites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="#" id="logoutuser"></a></li>
+              </ul>
+            </nav>
+            <a href="cart.html"   id="cart_open" ><img src="images/cart.png" alt="" width="30px" height="30px" /></a>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+          </div>    
+    </div>
+
+    <!-- Single Products Detail -->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/gallery-1.jpg" width="100%" id="ProductImg" />
+
+         
+        </div>
+        <div class="col-2">
+          <h2 id="username"></h2>
+          <p id="email"></p>
+
+          <br />
+          <h3>User Details <i class="fa fa-indent"></i></h3>
+          <p>
+            I am foodie want to explore every taste in resturant.
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-2">
+
+          <h3>FOODINE</h3>
+          <p>
+            Offering an authentic selection of dishes with contemporary twists and specialties.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Blog </a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Join Affiliate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook <a href="#" title="Facebook" class="fb"><i class="fa fa-facebook"></i></a></li>
+
+            <li>instagram <a href="#" title="instagram" class="insta"><i class="fa fa-instagram"></i></a></li>
+
+            <li>youtube <a href="#" title="youtube" class="yt"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- js for product gallery -->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var smallImg = document.getElementsByClassName("small-img");
+      smallImg[0].onclick = function () {
+        ProductImg.src = smallImg[0].src;
+      };
+      smallImg[1].onclick = function () {
+        ProductImg.src = smallImg[1].src;
+      };
+      smallImg[2].onclick = function () {
+        ProductImg.src = smallImg[2].src;
+      };
+      smallImg[3].onclick = function () {
+        ProductImg.src = smallImg[3].src;
+      };
+    </script>
+
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cartMenu.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

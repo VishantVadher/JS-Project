@@ -1,0 +1,195 @@
+<!-- Kanik Sapna -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Foodine - About us </title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="foodine logo" width="125px" /></a>
+        </div>       
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" id="homelogin">Home</a></li>
+            <li><a href="profile.html" id="user"></a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="#" id="logoutuser"></a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"   id="cart_open" ><img src="images/cart.png" alt="" width="30px" height="30px" /></a>
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          <h1>
+            MAKE YOUR EXPERIENCE SUPERIOR WITH US
+          </h1>
+          <h2> 
+            Welcome to The Foodine
+          </h2>
+          <p>
+            At Foodine, we pride ourselves in the ability to offer our customers delicious and authentic food, 
+            created with the highest standards in a safe environment. 
+            Every single meal is freshly made with highest quality ingredients. 
+            Our goal is to help you enjoy the little things in life that matter. 
+            So round up friends or family, order delicious food, and relax! 
+            We thank you from the bottom of our hearts for your continued support.
+          </p>
+        </div>
+        <div class="col-3">
+          <img src="images/fp4.jpg" alt="Navigation Menu" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------ Testimonial  ------>
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="col-2">
+        <h1>What People Say</h1>
+      </div>
+      <div class="row">
+
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+
+          <p>
+            I would also like to say thank you to all your staff. It's really wonderful.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="images/user-1.png" alt="" />
+          <h3>Clara</h3>
+        </div>
+
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+
+          <p>
+            Nice place to visit, i like the ambience and the service. Very polite staff. Great Food!
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="images/user-2.png" alt="" />
+          <h3>Nina Margaret</h3>
+        </div>
+
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+
+          <p>
+            One of the best quality wise best food and very good service.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="images/user-3.png" alt="" />
+          <h3>John Bennett</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>
+            Download App for Android <br />
+            and ios mobile phone
+          </p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="" />
+            <img src="images/app-store.png" alt="" />
+          </div>
+        </div> -->
+        <div class="footer-col-2">
+
+          <h3>FOODINE</h3>
+          <p>
+            Offering an authentic selection of dishes with contemporary twists and specialties.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Blog </a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Join Affiliate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook <a href="#" title="Facebook" class="fb"><i class="fa fa-facebook"></i></a></li>
+
+            <li>instagram <a href="#" title="instagram" class="insta"><i class="fa fa-instagram"></i></a></li>
+
+            <li>youtube <a href="#" title="youtube" class="yt"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+  
+  <!-- JS for Toggle menu -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script src="js/user.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/cartMenu.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
